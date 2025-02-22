@@ -9,6 +9,7 @@ import { Pokemon, PokemonSchema } from './entities/pokemon.entity';
   providers: [PokemonService],
   imports: [
     MongooseModule.forFeature([
+      // Define the schema for the Pokemon entity
       {
         name: Pokemon.name,
         schema: PokemonSchema,
