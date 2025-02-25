@@ -4,8 +4,8 @@ import { MongooseModule } from '@nestjs/mongoose';
 
 @Module({
   imports: [
+    MongooseModule.forRoot('mongodb://localhost/27018/nest-pokemon'),
     PokemonModule,
-    MongooseModule.forRoot('mongodb://localhost/27017/nest-pokemon'),
   ],
 })
 export class AppModule {}
